@@ -1,95 +1,97 @@
 <!doctype html>
 <html>
-    <head>
-    	<meta charset="utf-8" />
-    	<title>Yingxuan Liu</title>
-    	<link rel="shortcut icon" href="#" />
-    	<link rel="stylesheet" href="http://7tebh5.com1.z0.glb.clouddn.com/homepage/application.min.css?t=201412301404" />
-    </head>
-    <body class="hide">
-			<div id="page">
-	    		<header id="hd">
-	    			<ul class="language">
-	    				<ul class="language">
-				  bbbbbbbb			<li data-language="zh">Chinese</li>
-							<li ata-language="en">English</li>
-	    			</ul>
-	    		</heaer>
-	    		<iv id="bd">
-			    	<script id="page-template" type="text/x-handlebars-template">
-	    			<article>
-		    			<section class="brief-info">
-		    				<h1><b class="first-name">{{name.firstName}}</b><b class="last-name">{{name.lastName}}</b></h1>
-		    				<section class="net-info">
-		    					<ul>
-		    						<li>
-		    							<a title="github" href="{{information.github}}" target="_blank"><img class="net-img" src="assets/images/github.png"/>
-		    							</a>
-		    						</li>
-		    						<li>
-		    							<a title="weibo" href="{{information.weibo}}" target="_blank"><img class="net-img" src="assets/images/weibo.png"/>
-		    							</a>
-		    						</li>
-		    						<li>
-		    							<a title="twitter" href="{{information.twitter}}" target="_blank"><img class="net-img" src="assets/images/twitter.png"/></a>
-		    						</li>
-		    						<li>
-		    							<a title="blog" href="{{information.blog}}" target="_blank"><img class="net-img" src="assets/images/blog.png"/></a>
-		    						</li>
-		    						<li>
-		    							<a title="mail" href="mailto:{{information.email}}"><img class="net-img" src="assets/images/mail.png"/></a>
-		    						</li>
-		    					</ul>
-		    				</section>
-		    			</section>
-		    			<div class="avatar">{{empty}}</div>
-	    			</article>
-	    			<article class="dots-wrap">
-	    				{{#milestones}}
-	    				<div class="dots">
-	    					<span class="dot"></span>
-	    					{{#if multipleEvents}}
-	    					<span class="leaves"></span>
-	    					{{/if}}
-	    					<section class="milestones">
-	    						<section class="title">
-		    						<h3 class="date">{{date}}</h3>
-		    						{{#if summary}}
-		    						<b class="summary">{{summary}}</b>
-		    						{{/if}}
-		    					</section>
-		    						<ul>
-		    							{{#events}}
-		    							<li>
-		    								{{#if ../multipleEvents}}
-		    								<span class="small-dot"></span>
-		    								{{/if}}
-		    								<span class="content">{{{content}}}</span>
-		    								<section class="details">
-		    									<ul>
-			    									{{#details}}
-			    									<li><b>{{field}}</b><span>{{{content}}}</span></li>
-			    									{{/details}}
-		    									</ul>
-		    								</section>	
-		    							</li>
-		    							{{/events}}
-		    						</ul>
-	    					</section>
-	    				</div>
-	    				{{/milestones}}
-	    			</article>
-	    			</script>
-	    		</div>
-			</div>
-    		<footer id="ft">
-    			<div class="copyright">© 2012-2015 <a href="http://goddyzhao.me" target="_blank">Goddy Zhao</a> &amp; design by <a href="http://weibo.com/zmydou" target="_blank">粥不知道</a></div>
-    		</footer>
-    	<script src="http://7tebh5.com1.z0.glb.clouddn.com/homepage/jquery-1.7.1.min.js?t=20131230"></script>
-    	<script src="http://7tebh5.com1.z0.glb.clouddn.com/homepage/handlebars-1.0.0.js?t=20131230"></script>
-    	<script src="http://7tebh5.com1.z0.glb.clouddn.com/homepage/bootstrap.min.js?t=20131230"></script>
-    	<script src="http://7tebh5.com1.z0.glb.clouddn.com/homepage/application.min.js?t=20131230"></script>
-		<script src=" http://s11.cnzz.com/z_stat.php?id=1253998436" type="text/javascript"></script>
-    	
-    </body>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Yingxuan Liu</title>
+	<link rel="shortcut icon" href="#" />
+	<link rel="stylesheet" href="http://7tebh5.com1.z0.glb.clouddn.com/homepage/application.min.css?t=201412301404" />
+</head>
+
+<body class="hide">
+	<div id="page">
+		<header id="hd">
+			<ul class="language">
+				<ul class="language">
+					<li data-language="zh">Chinese</li>
+					<li ata-language="en">English</li>
+				</ul>
+				</heaer>
+				<iv id="bd">
+					<script id="page-template" type="text/x-handlebars-template">
+						<article>
+							<section class="brief-info">
+								<h1><b class="first-name">{{name.firstName}}</b><b class="last-name">{{name.lastName}}</b></h1>
+								<section class="net-info">
+									<ul>
+										<li>
+											<a title="github" href="#" target="_blank"><img class="net-img" src="assets/images/github.png" />
+											</a>
+										</li>
+										<li>
+											<a title="weibo" href="#" target="_blank"><img class="net-img" src="assets/images/weibo.png" />
+											</a>
+										</li>
+										<li>
+											<a title="twitter" href="#" target="_blank"><img class="net-img" src="assets/images/twitter.png" /></a>
+										</li>
+										<li>
+											<a title="blog" href="#" target="_blank"><img class="net-img" src="assets/images/blog.png" /></a>
+										</li>
+										<li>
+											<a title="mail" href="#"><img class="net-img" src="assets/images/mail.png" /></a>
+										</li>
+									</ul>
+								</section>
+							</section>
+							<div class="avatar">{{empty}}</div>
+						</article>
+						<article class="dots-wrap">
+							{{#milestones}}
+							<div class="dots">
+								<span class="dot"></span> {{#if multipleEvents}}
+								<span class="leaves"></span> {{/if}}
+								<section class="milestones">
+									<section class="title">
+										<h3 class="date">{{date}}</h3>
+										{{#if summary}}
+										<b class="summary">{{summary}}</b> {{/if}}
+									</section>
+									<ul>
+										{{#events}}
+										<li>
+											{{#if ../multipleEvents}}
+											<span class="small-dot"></span> {{/if}}
+											<span class="content">{{{content}}}</span>
+											<section class="details">
+												<ul>
+													{{#details}}
+													<li><b>{{field}}</b><span>{{{content}}}</span></li>
+													{{/details}}
+												</ul>
+											</section>
+										</li>
+										{{/events}}
+									</ul>
+								</section>
+							</div>
+							{{/milestones}}
+						</article>
+					</script>
+	</div>
+	</div>
+	<footer id="ft">
+		<div class="copyright">© 2012-2015 <a href="http://goddyzhao.me" target="_blank">Goddy Zhao</a> &amp; design by
+			<a href="http://weibo.com/zmydou"
+				target="_blank">粥不知道</a>
+		</div>
+	</footer>
+	<script src="http://7tebh5.com1.z0.glb.clouddn.com/homepage/jquery-1.7.1.min.js?t=20131230"></script>
+	<script src="http://7tebh5.com1.z0.glb.clouddn.com/homepage/handlebars-1.0.0.js?t=20131230"></script>
+	<script src="http://7tebh5.com1.z0.glb.clouddn.com/homepage/bootstrap.min.js?t=20131230"></script>
+	<script src="http://7tebh5.com1.z0.glb.clouddn.com/homepage/application.min.js?t=20131230"></script>
+	<script src=" http://s11.cnzz.com/z_stat.php?id=1253998436" type="text/javascript"></script>
+
+</body>
+
 </html>
